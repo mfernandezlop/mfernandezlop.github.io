@@ -153,6 +153,19 @@ $(document).on('click', '.navbar-toggler', function(){
     }
 });
 
+    function toggleSystem() {
+       
+        if(!$("#switcherSistema").is(':checked')){
+            $("body").addClass("filterInvert");
+            $("img:not(.unfilterd)").addClass("filterInvert");
+
+        }else{
+        $("body").removeClass("filterInvert");
+        $("img:not(.unfilterd)").removeClass("filterInvert");
+            
+        }
+    }
+
 pk = {
     misc:{
         navbar_menu_visible: 0
