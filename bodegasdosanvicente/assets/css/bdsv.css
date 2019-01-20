@@ -5986,14 +5986,15 @@ textarea.form-control {
 #toTop {
     background-image: url(../../assets/img/totop1.png);
     background-size: contain;
-    bottom: 31px;
+    bottom: 36px;
+        filter: blur(0.7px);
     display: none;
-    right: 6px;
-    height: 50px;
+    right: 16px;
+    height: 40px;
     position: fixed;
     border-radius: 50%;
     transition: all 0s ease 0s;
-    width: 50px;
+    width: 40px;
     z-index: 10;
     padding: 5px;
 }
