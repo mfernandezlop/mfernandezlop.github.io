@@ -3086,7 +3086,7 @@ textarea.form-control {
 width: 68px;
 margin: 31px 26px 0 0;
 vertical-align: bottom;
-height: 0;
+
 display: inline-block;
 text-align: center;
 }
