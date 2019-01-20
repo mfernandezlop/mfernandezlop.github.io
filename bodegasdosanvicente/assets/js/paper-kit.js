@@ -156,11 +156,11 @@ $(document).on('click', '.navbar-toggler', function(){
     function toggleSystem() {
        
         if(!$("#switcherSistema").is(':checked')){
-            $("body").addClass("filterInvert");
+            $("html").addClass("filterInvert");
             $("img:not(.unfilterd)").addClass("filterInvert");
 
         }else{
-        $("body").removeClass("filterInvert");
+        $("html").removeClass("filterInvert");
         $("img:not(.unfilterd)").removeClass("filterInvert");
             
         }
