@@ -123,20 +123,29 @@ $(document).on('click', '.navbar-toggler', function(){
         setTimeout(function(){
             $toggle.removeClass('toggled');
              $(".wrapper").off("click");
-        }, 550);
+             $('.navbar-nav a').off('click')
+        }, 350);
     } else {
         setTimeout(function(){
             $toggle.addClass('toggled');
-        }, 580);
+        }, 380);
 
-        div = '<div id="bodyClick"></div>';
         $(".wrapper").click(function() {
             $('html').removeClass('nav-open');
             pk.misc.navbar_menu_visible = 0;
              $(".wrapper").off("click");
             setTimeout(function(){
                 $toggle.removeClass('toggled');
-            }, 550);
+            }, 350);
+        });
+
+        $('.navbar-nav a').on('click', function(){
+             $('html').removeClass('nav-open');
+            pk.misc.navbar_menu_visible = 0;
+             $(".wrapper").off("click");
+            setTimeout(function(){
+                $toggle.removeClass('toggled');
+            }, 350);
         });
 
         $('html').addClass('nav-open');
