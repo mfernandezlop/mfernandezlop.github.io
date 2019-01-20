@@ -58,7 +58,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#nosotros" class="nav-link"><i class="nc-icon nc-map-big"></i> Encuentranos</a>
+                        <a href="#nosotros" class="nav-link">
+                        <i class="nc-icon nc-map-big"></i> Encuentranos</a>
                     </li>
                 </ul>
             </div>
@@ -191,11 +192,11 @@
                             <div class="nav-tabs-navigation">
                                 <div class="nav-tabs-wrapper">
                                     <ul id="tabs2" class="nav nav-tabs" role="tablist">
-                                         <li class="nav-item active">
-                                            <a class="nav-link" data-toggle="tab" href="#estamos" role="tab">Donde estamos</a>
+                                         <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#estamos" role="tab">Donde estamos</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " data-toggle="tab" href="#somos" role="tab">Nuestros productos</a>
+                                            <a class="nav-link " data-toggle="tab" href="#somos" role="tab">Que ofrecemos</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -252,11 +253,12 @@
     			<div class="container">
     				<div class="row">
     					<div class="col-md-8 ml-auto mr-auto text-center">
-    					  <h3 class="title">Bodega San Vicente</h3>
-                            <p class="description">
-                                Situda en pleno "casco vello", más concretamente en la Rúa Nova, nos encontramos una de las  vinotecas más enblematica de Lugo: Bodegas do San Vicente. Dirigido por el mismo propietario desde 1983, las Bodegas do San Vicente es un referente del buen vino en Lugo, desde los vinos autóctonos (Las 5 denominaciones de origen gallego) hasta los riojas, los riberas del duero y de otras denominaciones y todo eso acompañado por sabrosas tablas y pinchos elaborados con jamon, cecina, lomo chorizo... y tambien un amplio surtido de quesos que hacen de esta Bodega un lugar acogedor y con personalidad.
-                            </p> 
-           
+        					 <h3 class="title">Bodega San Vicente</h3>
+                             <p class="description" style="text-align: left;">
+                                    Situda en pleno centro histórico, más concretamente en la Rúa Nova, os presentamos una de las  vinotecas más enblematica de Lugo: Bodegas do San Vicente.<br>Dirigido por el mismo propietario desde 1983, la bodega<span id="contentDoted">... <a id="showMore">(más)</a>
+                                    </span>
+                                    <span id="contentExpanded">es un referente del buen vino en Lugo, desde los vinos autóctonos (Las 5 denominaciones de origen gallego) hasta los riojas, los riberas del duero y otras denominaciones del mundo y todo eso acompañado por sabrosas tablas y pinchos elaborados con jamon, cecina, lomo chorizo... y tambien un amplio surtido de quesos que hacen de esta Bodega un lugar acogedor y con personalidad.<a id="showLess"> (menos)</a></span>
+                            </p>
     					</div>
     				</div>
     			</div>
@@ -264,24 +266,24 @@
             <div class="section section-dark">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 img-text-element">
                                 <img src="assets\img\san_froilan.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
                                 <div class="img-text-container">
                                     <p class="img-text">San Forilan</p>
                                 </div>
                                 <a href="http://sanfroilan.info/" class="btn btn-outline-neutral btn-round img-text-button" target="_blank">Conocer</a>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 img-text-element">
                                 <img src="assets\img\plaza_del_campo.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
                                 <div class="img-text-container">
-                                    <p class="img-text">Casco viejo lucense</p>
+                                    <p class="img-text">centro histórico</p>
                                 </div>
                                 <a href="https://www.turismo.gal/que-visitar/destacados/muralla-de-lugo/interior-da-muralla?langId=es_ES" class="btn btn-outline-neutral btn-round img-text-button" target="_blank">Conocer</a>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 img-text-element">
                                 <img src="assets\img\arde_lucus.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
                                 <div class="img-text-container">
-                                    <p class="img-text">Arde Lvcvs/</p>
+                                    <p class="img-text">Arde Lvcvs</p>
                                 </div>
                                 <a href="http://www.ardelucus.com/" class="btn btn-outline-neutral btn-round img-text-button" target="_blank">Conocer</a>
                         </div>
@@ -298,7 +300,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
-                            <h2 class="text-center">Keep in touch?</h2>
+                            <h2 class="text-center">Pregúntanos algo!</h2>
                             <form class="contact-form">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -324,7 +326,7 @@
                                 <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
                                 <div class="row">
                                     <div class="col-md-4 ml-auto mr-auto">
-                                        <button class="btn btn-danger btn-lg btn-fill">Pregúntanos algo!</button>
+                                        <button class="btn btn-danger btn-lg btn-fill">enviar</button>
                                     </div>
                                 </div>
                             </form>
@@ -337,7 +339,7 @@
             <span id="toTopHover" style="opacity: 0;"></span>
         </a>
     </div>        
-    <footer class="footer">
+    <footer class="footer" style="padding-right: 44px; bottom: 14px;">
         <div class="container">
             <div class="row">
                 <!--<nav class="footer-nav">

@@ -1649,7 +1649,7 @@ textarea.form-control {
 }
 
 .section {
-  padding: 70px 0;
+  padding: 35px 0;
   position: relative;
   background-color: #FFFFFF;
 }
@@ -1689,11 +1689,26 @@ textarea.form-control {
 .section-dark {
   background-color: #0b1011;
 }
+#contentDoted{
+  display: inline;
+}
+#showMore, #showLess{
+  cursor: pointer;
+  color: #f5593d;
+  font-size: 0.6em;
+}
+#contentExpanded{
+  display: none;
+}
 
 .section-image,
 .section-gold,
 .section-dark {
   position: relative;
+}
+.img-text-element{
+  text-align: center;
+  margin-top: 20px;
 }
 .section-image .title,
 .section-image .info-title,
@@ -5935,6 +5950,10 @@ textarea.form-control {
   background-color: gray;
   width: 100%;
   opacity: 0.6;
+}
+.img-text:hover{
+  opacity: 0.9;
+  transition-timing-function: .300ms
 }
 .img-text-container{
   position: relative;

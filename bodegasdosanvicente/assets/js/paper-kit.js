@@ -101,6 +101,17 @@ $(document).ready(function(){
                              $("#toTop").removeClass("bounce");}
         });
 
+
+    $("#showLess").on('click', function(){
+        $("#contentDoted").toggle();
+        $("#contentExpanded").toggle();
+    });
+  
+    $("#showMore").on('click', function(){
+        $("#contentExpanded").toggle();
+        $("#contentDoted").toggle();
+    }); 
+
 });
 
 
@@ -111,7 +122,7 @@ $(document).on('click', '.navbar-toggler', function(){
         pk.misc.navbar_menu_visible = 0;
         setTimeout(function(){
             $toggle.removeClass('toggled');
-            $('#bodyClick').remove();
+             $(".wrapper").off("click");
         }, 550);
     } else {
         setTimeout(function(){
@@ -119,10 +130,10 @@ $(document).on('click', '.navbar-toggler', function(){
         }, 580);
 
         div = '<div id="bodyClick"></div>';
-        $(div).appendTo("body").click(function() {
+        $(".wrapper").click(function() {
             $('html').removeClass('nav-open');
             pk.misc.navbar_menu_visible = 0;
-            $('#bodyClick').remove();
+             $(".wrapper").off("click");
             setTimeout(function(){
                 $toggle.removeClass('toggled');
             }, 550);
